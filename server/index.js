@@ -5,6 +5,10 @@ import cors from 'cors'
 import dotenv from 'dotenv'
 import helmet from 'helmet'
 import morgan from 'morgan'
+import panelRoutes from "./routes/panel.js"
+import generalRoutes from "./routes/general.js"
+import analyticsRoutes from "./routes/analytics.js"
+import systemRoutes from "./routes/system.js"
 
 /* Config */
 
@@ -18,5 +22,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(cors());
 
-
+/* Routes */
+app.use("/general", generalRoutes);
+app.use("/panel", panelRoutes);
+app.use("/analytics", analyticsRoutes);
+app.use("/system", systemRoutes);
 
