@@ -1,9 +1,11 @@
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
-import useSelector from "react-redux"
+import {useSelector} from "react-redux";
 import { themeSettings } from "theme";
 import { useMemo } from "react";
-
+import {Navigate, Route, Routes } from "react-router-dom";
+import Layout from "scenes/layout";
+import Dashboard from "scenes/dashboard";
 
 
 function App() {
@@ -12,7 +14,13 @@ function App() {
   return (
     <div className="app">
       <ThemeProvider theme={theme}>
-          <CssBaseline />
+      <CssBaseline />
+          <Routes>
+            <Route element={<Layout />}>
+              <Route path="/" element={<Navigate to="/dashboard" replace />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+            </Route>
+          </Routes>
           </ThemeProvider>
     </div>
   );
