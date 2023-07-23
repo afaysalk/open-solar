@@ -2,6 +2,7 @@ import Sidebar from "../../components/sidebar/Sidebar"
 import Widget from "../../components/widget/Widget"
 import Navbar from "../../components/navbar/Navbar"
 import "./home.scss"
+import Chart from "../../components/chart/Chart"
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
           <Widget type="rated"/>
           <Widget type="working"/>
         </div>
+        <Chart/>
       </div>
 
     </div>
