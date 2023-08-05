@@ -3,6 +3,7 @@ import Widget from "../../components/widget/Widget"
 import Navbar from "../../components/navbar/Navbar"
 import "./home.scss"
 import Chart from "../../components/chart/Chart"
+import Table from "../../components/table/Table"
 
 const Home = () => {
   return (
@@ -16,7 +17,13 @@ const Home = () => {
           <Widget type="working"/>
         </div>
         <Chart/>
+        <div className="listContainer">
+        <div className="listTitle">All</div>
+        <Table/>
+
       </div>
+      </div>
+      
 
     </div>
     
