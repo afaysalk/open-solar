@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="main2.png" height="29" />
+  <img src="main2.png" height="100" />
 </p>
 <p align="center">
   <i>A collaborative, knowledge managment system for your sonal panels built using React and Node.js.</i>
