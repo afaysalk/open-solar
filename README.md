@@ -2,7 +2,8 @@
   <img src="main2.png" height="100" />
 </p>
 <p align="center">
-  <i>A collaborative, knowledge managment system for your sonal panels built using React and Node.js.</i>
+  <i>A collaborative, knowledge based managment system for your solar panels built using React and Node.js.</i>
+  <br/>
   <br/>
   <img width="1640" alt="screenshot" src="main_12.png">
 </p>
